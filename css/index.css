@@ -1,3 +1,6 @@
+body{
+   background-image: linear-gradient(to right top, #f8baeb, #ffb9d6, #ffbcc5, #fcc1b8, #f2c6b2);
+}
 /* hero background image */
 .bgimage {
    height:100vh;
@@ -20,10 +23,26 @@
    transform: translate(-50%, -50%);
    color: white;
 }
+.socials {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   right: 1%;
+   padding: 10px;
+   margin: 10px;
+   bottom: 50%;
+   width: 3.5rem;
+   height: 2rem;
+ }
+ .socials a:hover{
+   background-color: rgb(226, 183, 183);
+   border-radius: 4px;
+   padding: 10px;
+}
 /* about section image css */
 .imageAboutPage {
    width: 100%;
-   border-radius: 50%;
+   border-radius: 10px;
 }
 /* skills section css */
 :root {
@@ -67,29 +86,99 @@
 }
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
-   background-color: black;
+   background-image: linear-gradient(to right top, #fbd9f4, #ffd8e9, #ffd8de, #ffdad4, #ffddce);
+}
+.bb{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   height: 50vh;
+}
+.bb button{
+   border-radius: 5px;
+   border-color:rgba(248, 129, 208, 0.952);
+}
+.bb button:hover{
+   background-image: linear-gradient(to right top, #fbd9f4, #ffd8e9, #ffd8de, #ffdad4, #ffddce);
+}
+.bb a{
+   text-decoration: none;
+   color: #000000;
+}
+
+.bb1 button{
+   border-radius: 5px;
+   border-color:rgba(248, 129, 208, 0.952);
+}
+.bb1 button:hover{
+   background-image: linear-gradient(to right top, #f8baeb, #ffb9d6, #ffbcc5, #fcc1b8, #f2c6b2);
+}
+.bb1 a{
+   text-decoration: none;
+   color: #000000;
+}
+.connecting{
+   background-image: linear-gradient(to right top, #fbd9f4, #ffd8e9, #ffd8de, #ffdad4, #ffddce);
+   padding: 20px;
+   border-radius: 10px;
+}
+.textbutton{
+   align-self: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
 }
 /* social media icons styling */
 .social-icons {
-   font-size: 36px;
+   font-size: 20px;
    cursor: pointer;
+   right: 8%;
+   position: absolute;
 }
-.fa-github:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-discord:hover {
+.fa-github:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-discord:hover , .fa-envelope:hover{
    color: white;
 }
-.fab {
+.fab, .fa {
    color: #000000;
 }
 /* footer styling */
 #footer {
-   background-color: #808080;
-   text-align: center;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-image: linear-gradient(to right top, #fbd9f4, #ffd8e9, #ffd8de, #ffdad4, #ffddce);
+   padding: 30px;
 }
+#footer p{
+   align-self: center;
+   margin: 0;
+}
+#footer a:hover{
+   background-color: rgb(226, 183, 183);
+   padding: 5px;
+   border-radius: 4px;
+   box-shadow: 0 3px 10px var(--primary-shadow);
+}
+.scroll-up {
+   position: fixed;
+   right: 0.5%;
+   bottom: 2%;
+   cursor: pointer;
+ }
+ 
+ .up-arrow {
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+ }
 /* spacing on all sections */
-#about, #services, #project, #contact {
+#about, #skills, #project, #contact {
    margin-top: 4rem;
    padding-top: 4rem;
 }
-#contact {
+#contact, #project, #about, #connect {
    padding-bottom: 4rem;
 }
